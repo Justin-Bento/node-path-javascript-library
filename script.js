@@ -18,7 +18,7 @@ class Library {
       : `Reading (${book.pagesRead}/${book.numberOfPages})`;
   }
   displayLibrary() {
-    const body = document.body;
+    const body = document.querySelector(".myLibrary");
     const ul = document.createElement("ul");
 
     this.myLibrary.forEach((book) => {
